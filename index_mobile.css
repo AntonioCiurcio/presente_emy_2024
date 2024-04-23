@@ -1,4 +1,12 @@
 @media only screen and (max-width: 768px){
+@import url('https://fonts.googleapis.com/css2?family=Englebert&family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Englebert&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    
+    :root{
+        --font_manuscrito: "Englebert", cursive;
+        --font_texto_geral:"Open Sans", sans-serif;
+        --cor_de_fundo: #FFE6E6;  
+    }
     *{
         margin: 0px;
         padding: 0px;
@@ -6,6 +14,45 @@
     body{
         height: 100vh;
         width: 100vw;
+        background-color: var(--cor_de_fundo) ;
     }
-    
+    #parabens_com_fundo{
+        text-align: center;
+        font-size: 5vh;
+        margin-top: 15px;
+        font-family: var(--font_manuscrito); 
+         }
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    li{
+        margin: 0px 5px;
+        text-align: center;
+        list-style: none;
+    }
+    p{
+        font-family: var(--font_texto_geral);
+        margin-left: 5px;
+    }
+    .mural_de_fotos{
+        display: flex;  
+        align-items: center;
+        margin-top: 50%;
+    }
+    .img_do_mural{
+        width: 50px;
+    }
+    .img_do_mural:hover {
+        width: 100px;
+        background-size: contain;
+        transition: 1s ease-in;
+        border: 5px solid #D291BC;
+    }
+    .img_do_mural:{
+        filter: blur(10px);
+        width: 50px;
+    }
 }
