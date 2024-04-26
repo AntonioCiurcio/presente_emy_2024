@@ -16,43 +16,28 @@
         width: 100vw;
         background-color: var(--cor_de_fundo) ;
     }
-    #parabens_com_fundo{
-        text-align: center;
-        font-size: 5vh;
-        margin-top: 15px;
-        font-family: var(--font_manuscrito); 
-         }
-    ul{
+    .mural{
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: row;
+        position: relative;
+        width: 380px;
+       
+        
+    }
+    .card_mural{
+        width: 340px;     
 
     }
-    li{
-        margin: 0px 5px;
-        text-align: center;
-        list-style: none;
+    .img_do_mural{
+        width: 200px;
+        
     }
+
     p{
+        display: block;
         font-family: var(--font_texto_geral);
         margin-left: 5px;
+        background-attachment: fixed;
     }
-    .mural_de_fotos{
-        display: flex;  
-        align-items: center;
-        margin-top: 50%;
-    }
-    .img_do_mural{
-        width: 50px;
-    }
-    .img_do_mural:hover {
-        width: 100px;
-        background-size: contain;
-        transition: 1s ease-in;
-        border: 5px solid #D291BC;
-    }
-    .img_do_mural:{
-        filter: blur(10px);
-        width: 50px;
-    }
+   
 }
